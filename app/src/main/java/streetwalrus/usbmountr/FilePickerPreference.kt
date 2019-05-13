@@ -18,15 +18,9 @@ class FilePickerPreference : Preference, ActivityResultDispatcher.ActivityResult
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
     constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int)
         : super(context, attrs, defStyleAttr)
-    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int, defStyleRes: Int)
-        : super(context, attrs, defStyleAttr, defStyleRes)
 
-    private var mActivityResultId = -1
-
-    init {
-        val appContext = context.applicationContext as UsbMountrApplication
-        mActivityResultId = appContext.mActivityResultDispatcher.registerHandler(this)
-    }
+    val appContext = context.applicationContext as UsbMountrApplication
+    private val mActivityResultId = appContext.mActivityResultDispatcher.registerHandler(this)
 
     override fun onCreateView(parent: ViewGroup?): View {
         updateSummary()
@@ -40,10 +34,7 @@ class FilePickerPreference : Preference, ActivityResultDispatcher.ActivityResult
     }
 
     override fun onClick() {
-        val intent = Intent(Intent.ACTION_GET_CONTENT)
-        intent.type = "*/*"
-        intent.addCategory(Intent.CATEGORY_OPENABLE)
-        intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true)
+        val intent = Intent(context.applicationContext, ImageChooserActivity::class.java)
 
         val activity = context as Activity
         activity.startActivityForResult(intent, mActivityResultId)
@@ -51,18 +42,10 @@ class FilePickerPreference : Preference, ActivityResultDispatcher.ActivityResult
 
     override fun onActivityResult(resultCode: Int, resultData: Intent?) {
         if (resultCode == Activity.RESULT_OK && resultData != null) {
-            try {
-                val path = PathResolver.getPath(context, resultData.data)
-                Log.d(TAG, "Picked file $path")
-                persistString(path)
-                updateSummary()
-            } catch (e: SecurityException) {
-                // I'm extremely lazy and don't want to figure permissions out right now
-                Toast.makeText(context.applicationContext,
-                        context.getString(R.string.file_picker_denied),
-                        Toast.LENGTH_LONG
-                ).show()
-            }
+            val path = resultData.getStringExtra("path")!!
+            Log.d(TAG, "Picked file $path")
+            persistString(path)
+            updateSummary()
         }
     }
 

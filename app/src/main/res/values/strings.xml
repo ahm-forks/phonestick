@@ -6,14 +6,21 @@
 
     <string name="file_picker_nofile">None</string>
 
-    <!-- Visible in the activity -->
+    <!-- MainActivity -->
     <string name="host_source_file">Image file</string>
     <string name="host_ro">Read-only</string>
     <string name="host_ro_summary">Prevent the PC from writing to the image</string>
     <string name="host_serve">Mount</string>
     <string name="host_disable">Unmount</string>
     <string name="host_help">This application will try to coexist with Android\'s USB services,
-        but the system is very likely to override its effects at any moment.</string>
+        but the system is very likely to override its effects at any moment.
+    </string>
+
+    <!-- ImageChooserActivity -->
+    <string name="title_activity_image_chooser">Image files</string>
+    <string name="image_chooser_filesize_mib">%1$.1f MiB</string>
+    <string name="image_chooser_add">Add new image</string>
+    <string name="image_chooser_copying_dialog">Copying image file</string>
 
     <!-- Toast messages -->
     <string name="host_success">The device should now show up on your PC</string>

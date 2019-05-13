@@ -6,13 +6,15 @@
 
     <string name="file_picker_nofile">Nessuno</string>
 
-    <!-- Visible in the activity -->
+    <!-- MainActivity -->
     <string name="host_source_file">File immagine</string>
     <string name="host_ro">Sola lettura</string>
     <string name="host_ro_summary">Impedisci al PC di scrivere sull\'immagine</string>
     <string name="host_serve">Monta</string>
     <string name="host_disable">Smonta</string>
     <string name="host_help">L\'applicazione proverà a coesistere con i servizi USB di Android, ma è molto probabile che il sistema sovrascriva questi effetti in qualsiasi momento.</string>
+
+    <!-- ImageChooserActivity -->
 
     <!-- Toast messages -->
     <string name="host_success">Il dispositivo dovrebbe ora apparire sul tuo PC</string>

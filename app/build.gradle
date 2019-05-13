@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 def getVersionName = { ->
     def stdout = new ByteArrayOutputStream()
@@ -35,9 +36,10 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'eu.chainfire:libsuperuser:1.0.0.+'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'eu.chainfire:libsuperuser:1.0.0.+'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
 }
 repositories {
     mavenCentral()
