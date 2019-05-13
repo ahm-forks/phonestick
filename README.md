@@ -1,15 +1,7 @@
-# Deprecation notice
-I've completely lost interest in Android development, and I am therefore unwilling to keep maintaining this project.
-There are multiple issues related to differences between devices that I simply can't properly address, and keeping up
-with changes in the Android SDK every time I try to work on it is just a pain.
-
-This repo will be archived, and I'm not interested in giving it away to a new maintainer. This is an open source
-project, feel free to fork it and publish new releases anywhere you want as long as you comply with the license.
-Please don't bother sending me emails about anything remotely related to USB Mountr, I will delete them without
-looking.
-
-Sayonara,  
-Streetwalrus
+# Notice
+This is a fork of streetwalrus' USB Mountr application.
+I am planning to call it PhoneStick, but this project is still in its infancy.
+Below is the original README of USB Mountr.
 
 # USB Mountr
 A helper application to set the Mass Storage Device gadget up in Android kernels  
