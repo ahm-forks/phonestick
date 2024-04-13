@@ -2,22 +2,21 @@
 This is a fork of a fork of a fork of streetwalrus' USB Mountr application.
 I am planning to call it PhoneStick, but this project is still in its infancy.
 
-forked from Swyter/phonestick
-who forked it from dratini0/phonestick
-who forked it from donfanning/android\_usb\_msd (aka streetwalrus.usbmountr)
+forked from [Swyter/phonestick](https://github.com/Swyter/phonestick)
 
-I've also added filepicker fixes from kodiak-it/USB\_Mountr/
-and replaced the USB gadget code with Swyter/android-usb-mass-storage-enable
+who forked it from [dratini0/phonestick](https://github.com/dratini0/phonestick)
+
+who forked it from [donfanning/android\_usb\_msd](https://github.com/donfanning/android_usb_msd) (aka streetwalrus.usbmountr ?)
+
+
+I've also added filepicker fixes from [kodiak-it/USB\_Mountr/](https://github.com/kodiak-it/USB_Mountr)
+and replaced the USB gadget code with [Swyter/android-usb-mass-storage-enable](https://github.com/Swyter/android-usb-mass-storage-enable)
 
 
 Below is the original README of USB Mountr.
 
 # USB Mountr
 A helper application to set the Mass Storage Device gadget up in Android kernels  
-[<img src="https://f-droid.org/badge/get-it-on.png"
-      alt="Get it on F-Droid"
-      height="80">](https://f-droid.org/app/streetwalrus.usbmountr)  
-![Screenshot](/screenshot.png?raw=true)
 
 ## How it works
 Android kernels still include a USB MSD component in their device gadget nowadays, though it is mostly unused since
