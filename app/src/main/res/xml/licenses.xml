@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <licenses xmlns:android="http://schemas.android.com/apk/res/android">
     <license
+        name="phonestick"
+        type="MIT"
+        file="phonestick.txt"
+        url="https://github.com/JinbaIttai/phonestick" />
+    <license
         name="USB Mountr"
         type="MIT"
         file="usbmountr.txt"

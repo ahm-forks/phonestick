@@ -15,9 +15,8 @@ def getVersionName = { ->
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "28.0.3"
     defaultConfig {
-        applicationId "streetwalrus.usbmountr"
+        applicationId "jinbaittai.phonestick"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 8
@@ -35,6 +34,7 @@ android {
     lintOptions {
         checkReleaseBuilds false
     }
+    namespace 'streetwalrus.usbmountr'
 }
 
 dependencies {

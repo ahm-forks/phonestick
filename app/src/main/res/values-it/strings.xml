@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">USB Mountr</string>
+    <string name="app_name">phonestick</string>
 
     <string name="licenses">Licenze</string>
     <string name="licenses_upstream">Sorgente upstream</string>
