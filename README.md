@@ -1,6 +1,15 @@
 # Notice
-This is a fork of streetwalrus' USB Mountr application.
+This is a fork of a fork of a fork of streetwalrus' USB Mountr application.
 I am planning to call it PhoneStick, but this project is still in its infancy.
+
+forked from Swyter/phonestick
+who forked it from dratini0/phonestick
+who forked it from donfanning/android\_usb\_msd (aka streetwalrus.usbmountr)
+
+I've also added filepicker fixes from kodiak-it/USB\_Mountr/
+and replaced the USB gadget code with Swyter/android-usb-mass-storage-enable
+
+
 Below is the original README of USB Mountr.
 
 # USB Mountr
@@ -28,7 +37,3 @@ images. Feel free to translate the application to your own language as well.
 - @morfikov has written up [a tutorial](https://gist.github.com/morfikov/0bd574817143d0239c5a0e1259613b7d) on setting up
   your phone as a boot device for a LUKS setup
 
-## Donations
-I've been asked for donation info, so here it is.  
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SHUNWU2HDU7EY)  
-BTC: 199wYd9jB9yfBdXsfCXXESjzDHLHoKpBdd
