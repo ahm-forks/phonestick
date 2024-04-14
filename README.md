@@ -12,6 +12,11 @@ who forked it from [donfanning/android\_usb\_msd](https://github.com/donfanning/
 I've also added filepicker fixes from [kodiak-it/USB\_Mountr/](https://github.com/kodiak-it/USB_Mountr)
 and replaced the USB gadget code with [Swyter/android-usb-mass-storage-enable](https://github.com/Swyter/android-usb-mass-storage-enable)
 
+If you're interested in getting DriveDroid working with more recent Android hardware there's also:
+
+[Magisk module fixing DriveDroid app functionality on some new Android devices ](https://github.com/overzero-git/DriveDroid-fix-Magisk-module)
+
+---------------------------------------
 
 Below is the original README of USB Mountr.
 
